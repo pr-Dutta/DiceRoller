@@ -54,6 +54,13 @@ fun DiceWithButtonAndImage(modifier: Modifier = Modifier) {
     // to the constraints called on the modifier instance.
 
     // The remember composable requires a function to be passed.
+    // Composable functions can store an object in memory using the remember
+    // composable.
+
+    // The mutableStateOf() function returns an observable. You learn more
+    // about observables later, but for now this basically means that when
+    // the value of the result variable changes, a recomposition is triggered,
+    // the value of the result is reflected, and the UI refreshes.
     var result by remember { mutableStateOf(1) }
     val imageResource = when (result) {
         1 -> R.drawable.dice_1
