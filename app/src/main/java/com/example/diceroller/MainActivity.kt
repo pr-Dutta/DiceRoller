@@ -36,14 +36,14 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-//@Preview
-//@Composable
-//fun DiceRollerApp() {
-//    DiceWithButtonAndImage(modifier = Modifier
-//        .fillMaxSize()
-//        .wrapContentSize(Alignment.Center)                      // It's a new way to align content
-//    )
-//}
+@Preview
+@Composable
+fun DiceRollerApp() {
+    DiceWithButtonAndImage(modifier = Modifier
+        .fillMaxSize()
+        .wrapContentSize(Alignment.Center)                      // It's a new way to align content
+    )
+}
 
 // child composable uses the parent modifies object, and at the time of
 // calling we have to pass a new modifier object
