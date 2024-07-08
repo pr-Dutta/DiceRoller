@@ -36,6 +36,19 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+// --- (07-07-2024)
+
+// Stack trash shown the function call made to reached a certain line of code.
+
+// Step over:- it tells the debugger to execute the next line of code, if there is
+// other break point it goes to that break point.
+
+// Step into:- it will step into the function where break point is set (it will dig dip
+// and show you what will execute when the function calls where the break point was set).
+
+// Step out:- it is the opposite of step into.
+
+
 @Preview
 @Composable
 fun DiceRollerApp() {
